@@ -37,3 +37,4 @@
 - 04.10.26 15:45 [E-7] [parent: E-6] [agent: codebuff] DEC: goal_waves correction 3->2 -- the polish batches ran with no saipen PLAN entry, so they are not a goal wave; E-5's count was wrong and the valve stays at 2/3 waves, 11/20 tickets
 - 04.10.26 15:48 [E-8] [parent: E-7] [agent: codebuff] RUN: validate.py -> FAIL -- 23 legacy pre-skeleton LOG lines (sections 2026-09-09/16) remain; STATE and BOARD checks clean at this checkpoint
 - 04.10.26 16:09 [E-9] [parent: E-8] [agent: codebuff] RUN: git init -> commit 75e4dd8 -- 101 files, .freebuff/ gitignored, no secrets staged; push waits on owner-supplied remote URL
+- 04.10.26 16:17 [E-10] [parent: E-9] [agent: codebuff] DEC: amend -> 3e6b9f7; E-9 named pre-amend 75e4dd8
