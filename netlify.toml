@@ -1,0 +1,21 @@
+# GrowBox Admin — Netlify deploy (ADR-003: site #3, SPA mode)
+
+[build]
+  command = "pnpm --filter @growbox/admin build"
+  publish = "apps/admin/dist"
+
+# SPA fallback — all routes serve the app shell
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Per-site security headers (ARCHITECTURE.md §9)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"

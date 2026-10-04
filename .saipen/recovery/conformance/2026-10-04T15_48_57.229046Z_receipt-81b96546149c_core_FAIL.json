@@ -1,0 +1,17 @@
+{
+  "board_hash": "10c439347dfd99a1",
+  "content_hash": "de5e1b1b1d36d9b9",
+  "exit_code": 1,
+  "gate": "core",
+  "kind": "conformance_receipt",
+  "log_hash": "6b60df66791e71e3",
+  "project_identity": "c:\\users\\user\\documents\\growbox_admin",
+  "receipt_id": "receipt-81b96546149c",
+  "schema_version": 2,
+  "source_head": "no-git",
+  "source_tree_fingerprint": "no-git-tree-v1:9da580a8dfa632a474877908dd71cbcfefd5cef243d336398b0d83f3a5c880db",
+  "state_hash": "67613a1f63790a0e",
+  "timestamp_utc": "2026-10-04T15:48:57.229046Z",
+  "validator_protocol_version": "1",
+  "verdict": "FAIL"
+}

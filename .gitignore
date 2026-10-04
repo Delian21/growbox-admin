@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Builds
+dist/
+*.tsbuildinfo
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Editors & OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Tooling caches
+.eslintcache
+.netlify/
+coverage/
+
+# Local workspace metadata
+.freebuff/
+
+# Generated (kept in sync via `pnpm --filter @growbox/api-client generate`)
+packages/api-client/src/generated/

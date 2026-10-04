@@ -1,0 +1,42 @@
+{
+  "content_xor": "5bb5cbed5cbb691cbf93d4d247ee8c4d",
+  "inventory_xor": "721cb9dad1c1fa2ce374b89fac904fc1",
+  "lineage_hash": "73fad25f51c87e361284fe4d38baf7b055d3b1a05c1d9c71ff680c02e524a5a3",
+  "members": [
+    [
+      "2026-10-04T15_28_38.867771Z_receipt-08089d475397_core_FAIL.json",
+      "dfcee042d922d6124f84880d142857d7"
+    ],
+    [
+      "2026-10-04T15_31_32.926572Z_receipt-df2b0492f1ba_core_FAIL.json",
+      "7daa0bc78ce54ba69be3aac2a1957440"
+    ],
+    [
+      "2026-10-04T15_41_20.683693Z_receipt-4d233308e196_core_FAIL.json",
+      "05b0213249632fc99adaf4cb2b707265"
+    ],
+    [
+      "2026-10-04T15_47_02.331264Z_receipt-abd878e3af95_core_FAIL.json",
+      "544e654ec773068d9546f3df5beea331"
+    ],
+    [
+      "2026-10-04T15_48_57.229046Z_receipt-81b96546149c_core_FAIL.json",
+      "9f87d0a2843dfbe7f981197dfa98d3de"
+    ],
+    [
+      "2026-10-04T15_49_51.203881Z_receipt-5d53b1b32c28_core_FAIL.json",
+      "e302963f2d30e41ef91ee31e7ab1495c"
+    ],
+    [
+      "2026-10-04T16_09_35.145922Z_receipt-24c077f324cf_core_FAIL.json",
+      "62f5389e83dd78821076ba1b37c9a697"
+    ],
+    [
+      "2026-10-04T16_11_22.761594Z_receipt-5f6d1e7428d2_core_FAIL.json",
+      "b65f1a17adbcba977481b171352d429b"
+    ]
+  ],
+  "receipt_count": 8,
+  "receipt_dir_mtime_ns": 1791130283199423200,
+  "version": 1
+}

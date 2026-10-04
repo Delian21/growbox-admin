@@ -1,0 +1,148 @@
+/* ============================================================
+   GrowBox Admin — Color Tokens (PROVISIONAL)
+   Companion to ARCHITECTURE.md §4.2 (Flutter → CSS mapping).
+
+   Mapping (source of truth):
+     --primary            ← colorScheme.primary            (brand actions, active nav)
+     --primary-soft       ← colorScheme.primaryContainer   (card accents, selected rows)
+     --secondary          ← colorScheme.secondary          (vendor-side: KYC, payouts)
+     --accent             ← colorScheme.tertiary           (buyer-side: orders, disputes)
+     --destructive        ← colorScheme.error              (bans, rejections, spoilage)
+     --card/--background  ← colorScheme.surface/background
+
+   PROVISIONAL values: a coherent "harvest" palette proposed on
+   2026-09-09 because the client repos were not available to
+   extract exact ColorScheme hexes. Swap in exact values when the
+   repos are reachable — the variable names and mapping do not
+   change. Success criterion (ARCHITECTURE.md §4.2): admin panel
+   beside either client must read as the same company.
+
+   Compatible with shadcn/ui + Tailwind (v3: alias via config;
+   v4: feed into @theme). Sidebar & chart tokens follow the
+   shadcn conventions used by tailwind-admin.
+   ============================================================ */
+
+:root {
+  /* Surfaces */
+  --background: #faf9f5;
+  --foreground: #1b241a;
+  --card: #ffffff;
+  --card-foreground: #1b241a;
+  --popover: #ffffff;
+  --popover-foreground: #1b241a;
+
+  /* Brand — harvest green */
+  --primary: #2e7d32;
+  --primary-foreground: #ffffff;
+  --primary-soft: #ddefdd;
+
+  /* Vendor side — soil brown */
+  --secondary: #6d4c2f;
+  --secondary-foreground: #fff8ef;
+  --secondary-soft: #efe3d3;
+
+  /* Buyer side — harvest amber */
+  --accent: #d97706;
+  --accent-foreground: #ffffff;
+  --accent-soft: #fbeeda;
+
+  /* Neutrals — muted text at WCAG AA on background & card (#6b7263 was ~4.2:1) */
+  --muted: #f1f1ea;
+  --muted-foreground: #616958;
+
+  /* Status — destructive darkened one step: #c62828 measured 4.43:1 on its
+   * own 15% tint over white (just under AA for small text); #b71c1c clears it. */
+  --destructive: #b71c1c;
+  --destructive-foreground: #ffffff;
+  --success: #1f9d55;
+  --success-foreground: #ffffff;
+  --warning: #e0a410;
+  --warning-foreground: #211802;
+
+  /* Lines & focus */
+  --border: #e3e4da;
+  --input: #e3e4da;
+  --ring: #2e7d32;
+  --radius: 0.75rem;
+
+  /* Charts: GMV, take rate, spoilage, logistics, disputes */
+  --chart-1: #2e7d32;
+  --chart-2: #d97706;
+  --chart-3: #8a5a2b;
+  --chart-4: #2c7fb8;
+  --chart-5: #c62828;
+
+  /* Sidebar */
+  --sidebar-background: #f3f4ec;
+  --sidebar-foreground: #1b241a;
+  --sidebar-primary: #2e7d32;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #ddefdd;
+  --sidebar-accent-foreground: #1a5b2e;
+  --sidebar-border: #e3e4da;
+  --sidebar-ring: #2e7d32;
+}
+
+.dark {
+  /* Surfaces — desaturated gray-green chrome (designer pass 2026-09):
+   * green was removed from surfaces entirely; depth comes from three
+   * neutral steps + borders. Green lives only in actions/active states. */
+  --background: #141614;
+  --foreground: #e8eae6;
+  --card: #1d211e;
+  --card-foreground: #e8eae6;
+  --popover: #1d211e;
+  --popover-foreground: #e8eae6;
+
+  /* Brand — reserved for primary actions & active nav, not surfaces */
+  --primary: #7fc97f;
+  --primary-foreground: #0e1a10;
+  --primary-soft: #263a2b;
+
+  /* Vendor side */
+  --secondary: #c89b6a;
+  --secondary-foreground: #1d1408;
+  --secondary-soft: #3a2c1c;
+
+  /* Buyer side */
+  --accent: #f0a83c;
+  --accent-foreground: #201403;
+  --accent-soft: #3d2c12;
+
+  /* Neutrals — muted text lifted to clear WCAG AA on card/background */
+  --muted: #262b27;
+  --muted-foreground: #aeb6aa;
+
+  /* Status — warning text is LIGHT amber in dark mode: chips render as
+   * 15% amber tints over dark surfaces, so dark text was unreadable */
+  --destructive: #ef6c60;
+  --destructive-foreground: #2a0b09;
+  --success: #4cc38a;
+  --success-foreground: #06281a;
+  --warning: #f0b429;
+  --warning-foreground: #f3c64b;
+
+  /* Lines & focus */
+  --border: #2e342f;
+  --input: #2e342f;
+  --ring: #7fc97f;
+
+  /* Charts — full semantic ramp, no brand-color monopoly:
+   * 1 green (positive), 2 amber (attention), 3 brown (vendor-side),
+   * 4 blue (primary data series), 5 red (negative) */
+  --chart-1: #7fc97f;
+  --chart-2: #f0a83c;
+  --chart-3: #c89b6a;
+  --chart-4: #6fb3d2;
+  --chart-5: #ef6c60;
+
+  /* Sidebar */
+  --sidebar-background: #181c19;
+  --sidebar-foreground: #e8eae6;
+  --sidebar-primary: #7fc97f;
+  --sidebar-primary-foreground: #0e1a10;
+  --sidebar-accent: #253128;
+  --sidebar-accent-foreground: #cfe6d2;
+  --sidebar-border: #2e342f;
+  --sidebar-ring: #7fc97f;
+}
