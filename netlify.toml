@@ -1,7 +1,9 @@
 # GrowBox Admin — Netlify deploy (ADR-003: site #3, SPA mode)
 
 [build]
-  command = "pnpm --filter @growbox/admin build"
+  # packages/api-client/src/generated is gitignored, so a fresh clone must
+  # regenerate the OpenAPI schema before the admin app typechecks.
+  command = "pnpm --filter @growbox/api-client generate && pnpm --filter @growbox/admin build"
   publish = "apps/admin/dist"
 
 # SPA fallback — all routes serve the app shell
