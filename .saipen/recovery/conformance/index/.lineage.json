@@ -1,7 +1,7 @@
 {
-  "content_xor": "7b437e5b5875283128160317b1e10716",
-  "inventory_xor": "4036aafda073d7fa1c1756cc5d8c2ee5",
-  "lineage_hash": "99dc51fe2c245604165515aabcc6431eacd8ea8014c9880296cb87988eddb545",
+  "content_xor": "f114d11b14a7789eb29c9d75c319e9f9",
+  "inventory_xor": "51583c7dcc5461363287b5efe199676b",
+  "lineage_hash": "a00e5ec44a4ea7c963c95bff9257c5f24a29c501e8252dab9d6d8cd21cba7db1",
   "members": [
     [
       "2026-10-04T15_28_38.867771Z_receipt-08089d475397_core_FAIL.json",
@@ -42,9 +42,13 @@
     [
       "2026-10-04T16_23_13.583166Z_receipt-56c1f0857984_core_FAIL.json",
       "4ac00d2b6f005ecd1aec13593ff08047"
+    ],
+    [
+      "2026-10-04T16_28_09.029027Z_receipt-3481094a7dc2_core_FAIL.json",
+      "8a57af404cd250af9a8a9e6272f8eeef"
     ]
   ],
-  "receipt_count": 10,
-  "receipt_dir_mtime_ns": 1791130993819261900,
+  "receipt_count": 11,
+  "receipt_dir_mtime_ns": 1791131289328259700,
   "version": 1
 }
