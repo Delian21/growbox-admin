@@ -7,7 +7,7 @@ Goals:
 Conventions: goals `G<n>`, tickets `T<n>`; move tickets DOING -> DONE and record every transition in LOG.md.
 
 Wave 2 (2026-09-16): owner picked Phase 1 screens while ADR-004 stays parked — T4-T8 filed at top, T3 demoted below (MAINTENANCE §2.4 Entry).
-Polish batch (2026-10-04): owner-driven design/polish — T-9 and T-10 filed DONE at this checkpoint (LOG E-2, E-3); ticket lines upgraded to the RFC §1.2 `T-###` shape.
+Polish batch (2026-10-04): owner-driven design/polish — T-9 and T-10 filed DONE at this checkpoint (LOG E-25, E-26); ticket lines upgraded to the RFC §1.2 `T-###` shape.
 
 ## DOING
 
@@ -25,7 +25,7 @@ Polish batch (2026-10-04): owner-driven design/polish — T-9 and T-10 filed DON
 - [x] T-6 (G1) Vendors screens: performance list + profile meters + warn/suspend/reinstate/ban | verify: typecheck + lint + build PASS 2026-09-16 (LOG section 2026-09-16)
 - [x] T-7 (G1) Audit log: read-only table with actor/entity/date filters; no edit path | verify: typecheck + lint + build PASS 2026-09-16 (LOG section 2026-09-16)
 - [x] T-8 (G1) Dashboard stat cards: GMV, open disputes, SLA breaches, poor performers + recent audit activity | verify: typecheck + lint + build PASS 2026-09-16 (LOG section 2026-09-16)
-- [x] T-9 (G1) Design pass: hierarchy (hero GMV, variance chips), typography, StateBlock error/empty states, UI Pro donut, 7/30/90 scope selectors, contrast gate | verify: typecheck 0 / lint 0 errors 10 warnings / build 0 / contrast-audit ALL PASS, live DOM verified both themes 2026-10-04 (LOG E-4)
-- [x] T-10 (G1) Release polish: contrast audit covers chips + panel deltas, Sales trend scope, Analytics chart baseline/hover, docs sync, micro-interactions | verify: typecheck 0 / lint 0 errors 10 warnings / build 0 / contrast-audit exit 0, live DOM verified 2026-10-04 (LOG E-4)
+- [x] T-9 (G1) Design pass: hierarchy (hero GMV, variance chips), typography, StateBlock error/empty states, UI Pro donut, 7/30/90 scope selectors, contrast gate | verify: typecheck 0 / lint 0 errors 10 warnings / build 0 / contrast-audit ALL PASS, live DOM verified both themes 2026-10-04 (LOG E-27)
+- [x] T-10 (G1) Release polish: contrast audit covers chips + panel deltas, Sales trend scope, Analytics chart baseline/hover, docs sync, micro-interactions | verify: typecheck 0 / lint 0 errors 10 warnings / build 0 / contrast-audit exit 0, live DOM verified 2026-10-04 (LOG E-27)
 
 ## BLOCKED
